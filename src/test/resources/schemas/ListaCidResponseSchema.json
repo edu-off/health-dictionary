@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Lista ocorrencia Response",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "codigo": {
+          "type": "string"
+        },
+        "descricao": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "codigo",
+        "descricao"
+      ]
+
+    }
+  ]
+}

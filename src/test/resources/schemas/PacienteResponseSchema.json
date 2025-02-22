@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Paciente Response",
+  "type": "object",
+  "properties": {
+    "cpf": {
+      "type": "string"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "dataNascimento": {
+      "type": "string"
+    },
+    "codigoSus": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "cpf",
+    "nome",
+    "dataNascimento",
+    "codigoSus"
+  ]
+}

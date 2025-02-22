@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Ocorrencia Response",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "sintomas": {
+      "type": "string"
+    },
+    "diagnostico": {
+      "type": "string"
+    },
+    "registro": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "sintomas",
+    "diagnostico",
+    "registro"
+  ]
+}

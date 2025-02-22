@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Medicacao Response",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "medicacao": {
+      "type": "string"
+    },
+    "dosagem": {
+      "type": "number"
+    },
+    "quantidadeDias": {
+      "type": "number"
+    },
+    "observacao": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "medicacao",
+    "dosagem",
+    "quantidadeDias",
+    "observacao"
+  ]
+}

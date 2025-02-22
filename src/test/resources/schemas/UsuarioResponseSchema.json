@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Usuario Response",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "login": {
+      "type": "string"
+    },
+    "password": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "login",
+    "password",
+    "role"
+  ]
+}

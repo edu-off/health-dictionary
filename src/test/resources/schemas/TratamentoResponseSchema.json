@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Tratamento Response",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "tratamento": {
+      "type": "string"
+    },
+    "referenciaBibliografica": {
+      "type": "string"
+    },
+    "medicacoes": {
+      "type": "array"
+    }
+  },
+  "required": [
+    "id",
+    "tratamento",
+    "referenciaBibliografica",
+    "medicacoes"
+  ]
+}
