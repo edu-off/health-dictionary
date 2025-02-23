@@ -35,6 +35,8 @@ public class SecurityConfig {
                 .authorizeHttpRequests(authorize -> authorize
                         .requestMatchers("/auth/login")
                         .anonymous()
+                        .requestMatchers("/swagger-ui/**", "/v3/api-docs/**")
+                        .permitAll()
                         .requestMatchers(HttpMethod.GET, "/paciente/**")
                         .hasAnyRole("ADMIN", "MEDICO", "USUARIO")
                         .requestMatchers("/usuario/**")
