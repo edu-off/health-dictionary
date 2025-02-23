@@ -39,6 +39,8 @@ public class SecurityConfig {
                         .permitAll()
                         .requestMatchers(HttpMethod.GET, "/paciente/**")
                         .hasAnyRole("ADMIN", "MEDICO", "USUARIO")
+                        .requestMatchers(HttpMethod.PUT,"/usuario/change-password")
+                        .hasAnyRole("ADMIN", "MEDICO", "USUARIO")
                         .requestMatchers("/usuario/**")
                         .hasRole("ADMIN")
                         .requestMatchers("/paciente/**")
